@@ -1,0 +1,14 @@
+- name: load another file
+  hosts: all
+  tasks:
+    - name: print hello world
+      ansible.builtin.debug:
+      msg: Hello World
+
+
+    - name: Include universe file
+      ansible.builtin.include_tasks:
+        file: universe.yml
+
+
+
