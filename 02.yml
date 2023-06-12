@@ -1,7 +1,8 @@
-- name: load another file
+#Demo to check how to load another file
+- name: Demo on load another file
   hosts: all
   tasks:
-    - name: print hello world
+    - name: Print Hello World
       ansible.builtin.debug:
         msg: Hello World
 
